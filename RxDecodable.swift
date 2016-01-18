@@ -1,14 +1,5 @@
-//
-//  RxDecodable.swift
-//  RxDecodable
-//
-//  Created by Alejandro Perezpayá on 1/18/16.
-//  Copyright © 2016 ermes. All rights reserved.
-//
-
 import Foundation
 import RxSwift
-import RxCocoa
 import Decodable
 
 public typealias RxDecodable = Decodable

@@ -1,16 +1,9 @@
-//
-//  RxDecodableTests.swift
-//  RxDecodableTests
-//
-//  Created by Alejandro Perezpayá on 1/18/16.
-//  Copyright © 2016 ermes. All rights reserved.
-//
-
-import XCTest
 import RxSwift
 import RxCocoa
-import RxBlocking
 import Decodable
+
+import Quick
+import Nimble
 
 @testable import RxDecodable
 
@@ -22,26 +15,22 @@ struct TestDecodable: RxDecodable {
     }
 }
 
-class RxDecodableTests: XCTestCase {
+class RxDecodableSpec: QuickSpec {
     let disposableBag = DisposeBag()
-    override func setUp() {
-        super.setUp()
-    }
-
-    override func tearDown() {
-        super.tearDown()
-    }
-
-    func testDecodesOne() {
-        TestDecodable.rx_decode("bar").subscribe { o in
-            XCTAssertEqual(o.element!.foo, "bar")
-        }.addDisposableTo(disposableBag)
-    }
-
-    func testDecodesMultiple() {
-        [TestDecodable].rx_decode(["bar", "barbar"]).subscribe { o in
-            XCTAssertEqual(o.element!.first!.foo, "bar")
-            XCTAssertEqual(o.element!.last!.foo, "barbar")
-        }.addDisposableTo(disposableBag)
+    override func spec() {
+        describe("RxDecodable") {
+            it("decodes one item in a decodable object") {
+                TestDecodable.rx_decode("bar").subscribe { o in
+                    expect(o.element?.foo).to(equal("bar"))
+                }.addDisposableTo(self.disposableBag)
+            }
+            
+            it("decodes multiple items in a array of decodable objects") {
+                [TestDecodable].rx_decode(["bar", "man"]).subscribe { o in
+                    expect(o.element?.first?.foo).to(equal("bar"))
+                    expect(o.element?.last?.foo).to(equal("man"))
+                }.addDisposableTo(self.disposableBag)
+            }
+        }
     }
 }

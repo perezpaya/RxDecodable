@@ -1,11 +1,3 @@
-//
-//  RxDecodable.h
-//  RxDecodable
-//
-//  Created by Alejandro Perezpayá on 1/18/16.
-//  Copyright © 2016 ermes. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 //! Project version number for RxDecodable.

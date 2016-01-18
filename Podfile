@@ -8,3 +8,8 @@ pod 'RxCocoa', '~> 2.1'
 pod 'RxBlocking', '~> 2.1'
 pod 'Decodable', '~> 0.4'
 
+target 'RxDecodableTests' do
+    pod 'Quick'
+    pod 'Nimble'
+end
+

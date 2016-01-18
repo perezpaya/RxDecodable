@@ -1,5 +1,7 @@
 PODS:
   - Decodable (0.4)
+  - Nimble (3.0.0)
+  - Quick (0.8.0)
   - RxBlocking (2.1.0):
     - RxSwift (~> 2.0)
   - RxCocoa (2.1.0):
@@ -8,12 +10,16 @@ PODS:
 
 DEPENDENCIES:
   - Decodable (~> 0.4)
+  - Nimble
+  - Quick
   - RxBlocking (~> 2.1)
   - RxCocoa (~> 2.1)
   - RxSwift (~> 2.1)
 
 SPEC CHECKSUMS:
   Decodable: 67ebc3f3b94cb182444f839673ee1a7cd2a49abf
+  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
   RxBlocking: fa297def258d85c5beae9ed507f94645260b3747
   RxCocoa: 79b5feb8378545336e756a0a33fcf5e95050b71c
   RxSwift: 110fb07f81c17c2c3b3254d168363057b1880d18
