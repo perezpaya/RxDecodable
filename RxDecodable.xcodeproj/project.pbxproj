@@ -105,9 +105,9 @@
 		FA46DC0B1C4D52D200CF0EAC /* RxDecodable */ = {
 			isa = PBXGroup;
 			children = (
+				FA485EEC1C4E5E4B006869C8 /* Classes */,
+				FA485EED1C4E5E51006869C8 /* Headers */,
 				FA46DC0E1C4D52D200CF0EAC /* Info.plist */,
-				FA46DC0C1C4D52D200CF0EAC /* RxDecodable.h */,
-				FA63FE9F1C4D5A5600451D8E /* RxDecodable.swift */,
 			);
 			path = RxDecodable;
 			sourceTree = "<group>";
@@ -119,6 +119,22 @@
 				FA46DC181C4D52D200CF0EAC /* RxDecodableTests.swift */,
 			);
 			path = RxDecodableTests;
+			sourceTree = "<group>";
+		};
+		FA485EEC1C4E5E4B006869C8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FA63FE9F1C4D5A5600451D8E /* RxDecodable.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FA485EED1C4E5E51006869C8 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				FA46DC0C1C4D52D200CF0EAC /* RxDecodable.h */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
