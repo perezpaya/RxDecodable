@@ -11,11 +11,11 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "RxSwift extensions for Decodable"
 
-  s.description  = s.summary
+  s.description  = "RxSwift extensions for Decodable objects"
 
   s.homepage     = "https://github.com/ermesup/RxDecodable"
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
 
   s.authors      = {
                     "alexperezpaya" => "alex@ermesup.com",
