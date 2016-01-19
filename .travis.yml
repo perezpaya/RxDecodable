@@ -5,3 +5,5 @@ xcode_workspace: RxDecodable.xcworkspace
 xcode_scheme: RxDecodableTests
 before_install:
   - bundle install
+after_success:
+  - pod spec lint RxDecodable.podspec
