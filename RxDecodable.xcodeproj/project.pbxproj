@@ -38,7 +38,7 @@
 		FA46DC131C4D52D200CF0EAC /* RxDecodableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxDecodableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA46DC181C4D52D200CF0EAC /* RxDecodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDecodableTests.swift; sourceTree = "<group>"; };
 		FA46DC1A1C4D52D200CF0EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA63FE9F1C4D5A5600451D8E /* RxDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxDecodable.swift; sourceTree = SOURCE_ROOT; };
+		FA63FE9F1C4D5A5600451D8E /* RxDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxDecodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,11 +85,11 @@
 		FA46DBFF1C4D52D200CF0EAC = {
 			isa = PBXGroup;
 			children = (
+				76C146330A9C71D18A4A00D9 /* Frameworks */,
+				CCF16FA25AF20CFBF52284E6 /* Pods */,
+				FA46DC0A1C4D52D200CF0EAC /* Products */,
 				FA46DC0B1C4D52D200CF0EAC /* RxDecodable */,
 				FA46DC171C4D52D200CF0EAC /* RxDecodableTests */,
-				FA46DC0A1C4D52D200CF0EAC /* Products */,
-				CCF16FA25AF20CFBF52284E6 /* Pods */,
-				76C146330A9C71D18A4A00D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,9 +105,9 @@
 		FA46DC0B1C4D52D200CF0EAC /* RxDecodable */ = {
 			isa = PBXGroup;
 			children = (
-				FA63FE9F1C4D5A5600451D8E /* RxDecodable.swift */,
-				FA46DC0C1C4D52D200CF0EAC /* RxDecodable.h */,
 				FA46DC0E1C4D52D200CF0EAC /* Info.plist */,
+				FA46DC0C1C4D52D200CF0EAC /* RxDecodable.h */,
+				FA63FE9F1C4D5A5600451D8E /* RxDecodable.swift */,
 			);
 			path = RxDecodable;
 			sourceTree = "<group>";
@@ -115,8 +115,8 @@
 		FA46DC171C4D52D200CF0EAC /* RxDecodableTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA46DC181C4D52D200CF0EAC /* RxDecodableTests.swift */,
 				FA46DC1A1C4D52D200CF0EAC /* Info.plist */,
+				FA46DC181C4D52D200CF0EAC /* RxDecodableTests.swift */,
 			);
 			path = RxDecodableTests;
 			sourceTree = "<group>";
