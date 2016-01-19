@@ -31,5 +31,5 @@ hermes.subscribe { g in
 
 ## Cocoapods
 ```bash
-pod 'RxDecodable', '~> 0.0.1'
+pod 'RxDecodable', '~> 0.1'
 ```

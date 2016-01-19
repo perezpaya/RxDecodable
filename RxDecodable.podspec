@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RxDecodable"
-  s.version      = "0.0.1"
+  s.version      = "0.1"
   s.summary      = "RxSwift extensions for Decodable"
 
   s.description  = "RxSwift extensions for Decodable objects"
@@ -21,9 +21,7 @@ Pod::Spec.new do |s|
 
   s.source = { :git => "https://github.com/ermesup/RxDecodable.git", :tag => s.version.to_s }
 
-  s.source_files = 'RxDecodable/Classes/*.swift'
-
-  s.public_header_files = 'RxDecodable/Headers/*.h'
+  s.source_files = 'RxDecodable/Classes/RxDecodable.swift'
 
   s.requires_arc = true
 
