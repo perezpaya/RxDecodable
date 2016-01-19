@@ -3,6 +3,8 @@ language: objective-c
 rvm: 2.2.3
 xcode_workspace: RxDecodable.xcworkspace
 xcode_scheme: RxDecodableTests
+before_install:
+  - gem install bundler
 cache:
   - bundler
   - cocoapods
