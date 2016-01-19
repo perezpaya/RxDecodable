@@ -3,8 +3,6 @@ language: objective-c
 rvm: 2.0.0
 xcode_workspace: RxDecodable.xcworkspace
 xcode_scheme: RxDecodableTests
-before_install:
-  - gem install cocoapods -v 0.39
 cache:
   - cocoapods
 after_success:
