@@ -1,3 +1,6 @@
+osx_image: xcode7.2
 language: swift
 xcode_workspace: RxDecodable.xcworkspace
 xcode_scheme: RxDecodableTests
+before_install:
+  - gem install cocoapods
