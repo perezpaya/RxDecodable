@@ -4,10 +4,8 @@ rvm: 2.0.0
 xcode_workspace: RxDecodable.xcworkspace
 xcode_scheme: RxDecodableTests
 before_install:
-  - gem install bundler
-  - bundle install
+  - gem install cocoapods -v 0.39
 cache:
-  - bundler
   - cocoapods
 after_success:
   - pod spec lint RxDecodable.podspec
